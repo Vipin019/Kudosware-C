@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import find from "../../utils/Find";
 import { useShortProfile } from "../../context/shortProfileContext";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Postjob = () => {
   const [position, setPosition] = useState();
@@ -41,7 +43,7 @@ const Postjob = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://wild-cow-glasses.cyclic.app/api/v1/admin/job",
+        "https://kudosware-c-vipin.onrender.com/api/v1/admin/job",
         {
           position,
           date,
@@ -52,13 +54,13 @@ const Postjob = () => {
         }
       );
       if (res && res.data.success) {
-        alert("Job created Successfully");
+        toast.success(res.data.message);
       } else {
-        alert(res.data.message);
+        toast.error(res.data.message);
       }
     } catch (error) {
       console.log(error);
-      alert("Job can not create");
+      toast.error("Job can not create");
     }
   };
   return (

@@ -18,7 +18,7 @@ const Registerasdeveloper = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://wild-cow-glasses.cyclic.app/api/v1/auth/register",
+        "https://kudosware-c-vipin.onrender.com/api/v1/auth/register",
         {
           name,
           email,

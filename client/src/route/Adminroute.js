@@ -10,7 +10,7 @@ export default function Adminroute() {
   useEffect(() => {
     const authCheck = async () => {
       const res = await axios.get(
-        "https://wild-cow-glasses.cyclic.app/api/v1/auth/admin-auth"
+        "https://kudosware-c-vipin.onrender.com/api/v1/auth/admin-auth"
       );
       if (res.data.ok) {
         setOk(true);

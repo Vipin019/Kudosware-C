@@ -27,7 +27,7 @@ const Home = () => {
     try {
       if (auth?.user?.idCardNo) {
         const { data } = await axios.get(
-          "https://wild-cow-glasses.cyclic.app/api/v1/admin/job/"
+          "https://kudosware-c-vipin.onrender.com/api/v1/admin/job/"
         );
         if (data?.success) {
           setJobs(data?.jobs);
@@ -36,7 +36,7 @@ const Home = () => {
       } else if (auth.user) {
         const id = auth.user._id;
         const { data } = await axios.get(
-          "https://wild-cow-glasses.cyclic.app/api/v1/admin/job/" + id
+          "https://kudosware-c-vipin.onrender.com/api/v1/admin/job/" + id
         );
         if (data?.success) {
           setAllJobs(data?.jobs);
@@ -44,7 +44,7 @@ const Home = () => {
         }
       } else {
         const { data } = await axios.get(
-          "https://wild-cow-glasses.cyclic.app/api/v1/admin/job/"
+          "https://kudosware-c-vipin.onrender.com/api/v1/admin/job/"
         );
         if (data?.success) {
           setJobs(data?.jobs);

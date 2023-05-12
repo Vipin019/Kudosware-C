@@ -10,7 +10,7 @@ export default function PrivateRoute() {
   useEffect(() => {
     const authCheck = async () => {
       const res = await axios.get(
-        "https://wild-cow-glasses.cyclic.app/api/v1/auth/user-auth"
+        "https://kudosware-c-vipin.onrender.com/api/v1/auth/user-auth"
       );
       if (res.data.ok) {
         setOk(true);

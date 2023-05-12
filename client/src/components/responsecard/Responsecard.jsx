@@ -15,7 +15,8 @@ const Responsecard = ({ data }) => {
         <p>{data?.contactNo}</p>
         <Link
           to={
-            "https://wild-cow-glasses.cyclic.app/api/v1/user/resume/" + data._id
+            "https://kudosware-c-vipin.onrender.com/api/v1/user/resume/" +
+            data._id
           }
         >
           <TbFileDownload className="responseCard__container--icon" />

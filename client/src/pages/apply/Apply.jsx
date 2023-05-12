@@ -47,7 +47,7 @@ const Apply = () => {
       applicantData.append("resume", resume);
 
       const res = await axios.post(
-        "https://wild-cow-glasses.cyclic.app/api/v1/user/apply",
+        "https://kudosware-c-vipin.onrender.com/api/v1/user/apply",
         applicantData
       );
       if (res && res.data.success) {
@@ -63,7 +63,7 @@ const Apply = () => {
   // useEffect(async () => {
   //   try {
   //     const { data } = await axios.get(
-  //       "https://wild-cow-glasses.cyclic.app/api/v1/admin/job/" + id
+  //       "https://kudosware-c-vipin.onrender.com/api/v1/admin/job/" + id
   //     );
   //     if (data?.success) {
   //       setPosition(data.job.position);
