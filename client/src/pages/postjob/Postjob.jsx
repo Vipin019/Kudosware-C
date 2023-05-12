@@ -40,14 +40,17 @@ const Postjob = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8080/api/v1/admin/job", {
-        position,
-        date,
-        discreption,
-        skills,
-        education,
-        responsbality,
-      });
+      const res = await axios.post(
+        "https://wild-cow-glasses.cyclic.app/api/v1/admin/job",
+        {
+          position,
+          date,
+          discreption,
+          skills,
+          education,
+          responsbality,
+        }
+      );
       if (res && res.data.success) {
         alert("Job created Successfully");
       } else {

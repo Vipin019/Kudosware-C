@@ -18,7 +18,7 @@ const Registerashr = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/v1/auth/register",
+        "https://wild-cow-glasses.cyclic.app/api/v1/auth/register",
         {
           name,
           email,

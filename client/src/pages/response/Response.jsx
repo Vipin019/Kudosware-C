@@ -15,7 +15,7 @@ const Response = () => {
   const getData = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/user/apply/" + id
+        "https://wild-cow-glasses.cyclic.app/api/v1/user/apply/" + id
       );
       if (data?.success) {
         setDatas(data?.job);

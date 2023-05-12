@@ -13,7 +13,11 @@ const Responsecard = ({ data }) => {
         <h1>{data?.firstName + " " + data?.lastName}</h1>
         <p>{data?.email}</p>
         <p>{data?.contactNo}</p>
-        <Link to={"http://localhost:8080/api/v1/user/resume/" + data._id}>
+        <Link
+          to={
+            "https://wild-cow-glasses.cyclic.app/api/v1/user/resume/" + data._id
+          }
+        >
           <TbFileDownload className="responseCard__container--icon" />
         </Link>
       </div>

@@ -35,12 +35,14 @@ export const jobControllerPost = async (req, res) => {
 export const getAllJobsController = async (req, res) => {
   try {
     let jobs = await jobModel.find();
-    jobs.reverse();
-    return res.status(200).send({
-      success: true,
-      message: "All jobs",
-      jobs,
-    });
+    if (jobs) {
+      jobs.reverse();
+      return res.status(200).send({
+        success: true,
+        message: "All jobs",
+        jobs,
+      });
+    }
   } catch (error) {
     console.log(error);
     return res.status(500).send({
