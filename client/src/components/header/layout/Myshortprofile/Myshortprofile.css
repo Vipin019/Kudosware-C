@@ -1,0 +1,40 @@
+.myShortProfile{
+    background-color: var(--color-l-bg-variant);
+    padding: .5rem;
+    font-size: .7rem;
+    border-radius: .3rem;
+    text-align: center;
+}
+.myShortProfile p{
+    margin: .2rem;
+    padding: .5rem;
+    color: var(--color-d-bg-variant);
+}
+.myShortProfile p:hover{
+    color: var(--color-d-bg-variant);
+    cursor: pointer;
+}
+.myShortProfile__myProfile{
+    background-color: var(--color-l-bg);
+}
+.myShortProfile__myProfile:hover{
+    /* color: var(--color-d-bg-variant); */
+}
+.myShortProfile__mode{
+    background-color: var(--color-l-bg);
+}
+.myShortProfile__mode:hover{
+    /* cursor: pointer; */
+}
+.myShortProfile__setting{
+    background-color: var(--color-l-bg);
+}
+.myShortProfile__setting:hover{
+    /* cursor: pointer; */
+}
+.myShortProfile__logout{
+    background-color: var(--color-l-bg);
+}
+.myShortProfile__logout:hover{
+    /* cursor: pointer; */
+}

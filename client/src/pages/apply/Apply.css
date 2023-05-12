@@ -1,0 +1,50 @@
+.apply{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 6rem;
+}
+.apply__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apply__container>h1{
+    font-size: 1rem;
+    font-weight: 450;
+    margin: .3rem;
+    padding: .2rem;
+}
+.apply__container>h2{
+    font-size: .8rem;
+    font-weight: 300;
+    margin: .3rem;
+    padding: .2rem;
+    margin-top: 0rem;
+}
+.apply__container>form{
+    width: 100%;
+}
+.apply__container>form>input{
+    width: 98%;
+    margin: 1%;
+    padding: .3rem;
+    font-size: .7rem;
+}
+.apply__container>form>label{
+    width: 98%;
+    margin: 1%;
+    padding: .3rem;
+    font-size: .7rem;
+}
+.apply__container>form>div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.apply__container>form>div>input{
+    margin: 1%;
+    padding: .3rem;
+    font-size: .7rem;
+    width: 100%;
+}

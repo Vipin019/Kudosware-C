@@ -1,0 +1,33 @@
+.preference>h1{
+    font-size: 1rem;
+    font-weight: 450;
+    text-align: center;
+    margin: .2rem;
+    padding: .1rem;
+}
+.preference__container{
+    height: 40vh;
+    overflow: scroll;
+}
+.preference__container__input--l{
+    font-size: .8rem;
+    font-weight: 350;
+    margin: .2rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: var(--color-light);
+    display: inline-block;
+    
+}
+.preference__container__input--d{
+    font-size: .8rem;
+    font-weight: 350;
+    margin: .2rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: var(--color-l-bg-variant);
+    display: inline-block;
+}
+.preference__container>input:hover{
+    cursor: pointer;
+}

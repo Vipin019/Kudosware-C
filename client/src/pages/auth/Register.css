@@ -1,0 +1,44 @@
+#register{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#register__container{
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.register{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.register>h1{
+    font-size: 1rem;
+    margin: .3rem;
+    padding: .1rem;
+    font-weight: 400;
+    text-align: center;
+}
+.register>form{
+    width: 80%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.register>form>input{
+    margin: .5rem;
+    padding: .5rem;
+    font-size: .8rem;
+}
+.register>form>select{
+    margin: .5rem;
+    padding: .5rem;
+    font-size: .8rem;
+}

@@ -1,0 +1,82 @@
+.postjob{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+.postjob__container{
+    background-color: var(--color-l-bg);
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.postjob__container>h1{
+    font-size: 1rem;
+    margin: .3rem;
+    padding: .2rem;
+    font-weight: 400;
+}
+.postjob__container>form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.postjob__container>form>div{
+    width: 100%;
+    display: flex;
+}
+.postjob__container>form>div>input{
+    margin: .3rem;
+    padding: .4rem;
+    font-size: .7rem;
+    text-align: center;
+    border-radius: .1rem;
+}
+.postjob__container>form>div>select{
+    margin: .3rem;
+    padding: .4rem;
+    font-size: .7rem;
+    text-align: center;
+    border-radius: .1rem;
+}
+.postjob__container--head>input{
+    width: 50%;
+}
+.postjob__container--skills{
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+}
+.postjob__container--skills>input{
+    width: auto;
+    border-radius: 1rem!important;
+}
+.postjob__container--skills>input:hover{
+    cursor: pointer;
+}
+.postjob__container--skills>select{
+    width: auto;
+    border-radius: 1rem!important;
+}
+.postjob__container--skills>select{
+    cursor: pointer;
+}
+.postjob__container>form>textarea{
+    margin: .3rem;
+    padding: .3rem;
+    font-size: .7rem;
+    border-radius: .1rem;
+    height: 8rem;
+    max-width: 98%;
+    min-width: 98%;
+}
+.postJob__container__input--l{
+    background-color: var(--color-light);
+}
+.postJob__container__input--d{
+    background-color: var(--color-l-bg-variant);
+}

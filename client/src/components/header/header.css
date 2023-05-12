@@ -1,0 +1,56 @@
+.appName>h1{
+    position: fixed;
+    left:5%;
+    top: 1.5rem;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-family: 'Sigmar', cursive;
+}
+.appName>h1:hover{
+    cursor: pointer;
+}
+.header__myProfile{
+    border-radius: 100%;
+    margin: .5rem;
+    padding: .5rem;
+}
+.header__myProfile--avatar>img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.header__myProfile--avatar>img:hover{
+    cursor: pointer;
+}
+.header{
+    height: 5rem;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 5%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.header__myShortProfile{
+    width: 10rem;
+    height: 30rem;
+    overflow: scroll;
+    position: fixed;
+    right: 1%;
+    top: 4rem;
+    display: block;
+}
+.header__myShortProfile--hide{
+    display: none;
+}
+.background{
+    background-color: black;
+    opacity: 5%;
+    height: 5rem;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+
+}

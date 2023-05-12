@@ -1,0 +1,74 @@
+.jobs{
+    border-radius: .1rem;
+}
+.jobs h1{
+    font-size: 1rem;
+    font-weight: 450;
+}
+.jobs h6{
+    font-size: .9rem;
+    font-weight: 400;
+}
+.jobs p{
+    font-size: .8rem;
+    font-weight: 350;
+    text-align: justify;
+    margin: .2rem;
+    padding: .1rem;
+}
+.jobs small {
+    font-size: .7rem;
+    font-weight: 300;
+}
+.jobs__container{
+    display: flex;
+    flex-direction: column;
+    margin: .2rem;
+    background-color: var(--color-light);
+    border-radius: .1rem;
+}
+.jobs__container>h1{
+    font-size: 1rem;
+    font-weight: 450;
+    margin: .2rem;
+    padding: .2rem;
+}
+.jobs__container--status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jobs__container--skills>h6{
+    font-size: .9rem;
+    font-weight: 400;
+    margin: .2rem;
+    padding: .1rem;
+}
+.jobs__container--skills>div{
+    margin: .2rem;
+    margin-top: 0rem;
+    padding: .1rem;
+}
+.jobs__container--skills>div>small{
+    margin: .2rem;
+    padding: .5rem;
+    background-color: var(--color-l-bg-variant);
+    border-radius: 1rem;
+}
+.jobs__container--res>h6{
+    font-size: .9rem;
+    font-weight: 400;
+    margin: .2rem;
+    padding: .1rem;
+}
+.jobs__container--status>small{
+    font-size: .7rem;
+    font-weight: 300;
+    margin: .2rem;
+    padding: .1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.jobs__container input{
+    width: 98%;
+}

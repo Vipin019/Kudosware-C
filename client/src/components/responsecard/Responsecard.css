@@ -1,0 +1,43 @@
+.responseCard{
+    margin: .5rem;
+    padding: .5rem;
+    background-color: var(--color-l-bg-variant);
+    
+}
+.responseCard__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+}
+.responseCard__container>img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.responseCard__container>h1{
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.responseCard__container>p{
+    font-size: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.responseCard__container--icon{
+    font-size: 2rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.responseCard__container>Link:hover{
+    cursor: pointer;
+}
