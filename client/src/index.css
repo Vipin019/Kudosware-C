@@ -124,4 +124,8 @@ body{
 .responseCard__container--icon{
     font-size: 1rem!important;
 }
+.jobs__container--skills>div{
+  display: flex;
+  flex-wrap: wrap;
+}
 }
