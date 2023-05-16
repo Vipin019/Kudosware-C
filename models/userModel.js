@@ -18,7 +18,6 @@ const userSchema = new mongoose.Schema(
     },
     education: {
       type: String,
-      required: true,
     },
     idCardNo: {
       type: String,
