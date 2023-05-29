@@ -13,12 +13,7 @@ const Responsecard = ({ data }) => {
         <h1>{data?.firstName + " " + data?.lastName}</h1>
         <p>{data?.email}</p>
         <p>{data?.contactNo}</p>
-        <Link
-          to={
-            "https://kudosware-c-vipin.onrender.com/api/v1/user/resume/" +
-            data._id
-          }
-        >
+        <Link to={"/api/v1/user/resume/" + data._id}>
           <TbFileDownload className="responseCard__container--icon" />
         </Link>
       </div>

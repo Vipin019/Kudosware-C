@@ -42,17 +42,14 @@ const Postjob = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(
-        "https://kudosware-c-vipin.onrender.com/api/v1/admin/job",
-        {
-          position,
-          date,
-          discreption,
-          skills,
-          education,
-          responsbality,
-        }
-      );
+      const res = await axios.post("/api/v1/admin/job", {
+        position,
+        date,
+        discreption,
+        skills,
+        education,
+        responsbality,
+      });
       if (res && res.data.success) {
         toast.success(res.data.message);
       } else {

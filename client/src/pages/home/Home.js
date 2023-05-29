@@ -26,26 +26,20 @@ const Home = () => {
   const getJobs = async () => {
     try {
       if (auth?.user?.idCardNo) {
-        const { data } = await axios.get(
-          "https://kudosware-c-vipin.onrender.com/api/v1/admin/job/"
-        );
+        const { data } = await axios.get("/api/v1/admin/job/");
         if (data?.success) {
           setJobs(data?.jobs);
           setAllJobs(data?.jobs);
         }
       } else if (auth.user) {
         const id = auth.user._id;
-        const { data } = await axios.get(
-          "https://kudosware-c-vipin.onrender.com/api/v1/admin/job/" + id
-        );
+        const { data } = await axios.get("/api/v1/admin/job/" + id);
         if (data?.success) {
           setAllJobs(data?.jobs);
           setJobs(filter(data?.jobs, tags));
         }
       } else {
-        const { data } = await axios.get(
-          "https://kudosware-c-vipin.onrender.com/api/v1/admin/job/"
-        );
+        const { data } = await axios.get("/api/v1/admin/job/");
         if (data?.success) {
           setJobs(data?.jobs);
           setAllJobs(data?.jobs);

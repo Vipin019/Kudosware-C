@@ -1,5 +1,4 @@
-import { useState, useEffect, useContext, createContext } from "react";
-import axios from "axios";
+import { useState, useContext, createContext } from "react";
 
 const ShortProfileContext = createContext();
 const ShortProfileProvider = ({ children }) => {

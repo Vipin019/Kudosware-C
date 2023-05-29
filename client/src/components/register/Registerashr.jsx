@@ -17,15 +17,12 @@ const Registerashr = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(
-        "https://kudosware-c-vipin.onrender.com/api/v1/auth/register",
-        {
-          name,
-          email,
-          password,
-          idCardNo,
-        }
-      );
+      const res = await axios.post("/api/v1/auth/register", {
+        name,
+        email,
+        password,
+        idCardNo,
+      });
       if (res && res.data.success) {
         toast.success(res.data.success);
         navigate(location.state || "/login");

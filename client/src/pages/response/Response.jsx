@@ -14,9 +14,7 @@ const Response = () => {
 
   const getData = async () => {
     try {
-      const { data } = await axios.get(
-        "https://kudosware-c-vipin.onrender.com/api/v1/user/apply/" + id
-      );
+      const { data } = await axios.get("/api/v1/user/apply/" + id);
       if (data?.success) {
         setDatas(data?.job);
       } else {

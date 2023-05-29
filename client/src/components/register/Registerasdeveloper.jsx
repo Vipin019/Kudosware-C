@@ -17,15 +17,12 @@ const Registerasdeveloper = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(
-        "https://kudosware-c-vipin.onrender.com/api/v1/auth/register",
-        {
-          name,
-          email,
-          password,
-          education,
-        }
-      );
+      const res = await axios.post("/api/v1/auth/register", {
+        name,
+        email,
+        password,
+        education,
+      });
       if (res && res.data.success) {
         toast.success(res.data.message);
         navigate(location.state || "/login");
