@@ -65,14 +65,13 @@
 .postjob__container--skills>select{
     cursor: pointer;
 }
-.postjob__container>form>textarea{
-    margin: .3rem;
-    padding: .3rem;
-    font-size: .7rem;
-    border-radius: .1rem;
-    height: 8rem;
-    max-width: 98%;
-    min-width: 98%;
+.postjob__container--editor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 .postJob__container__input--l{
     background-color: var(--color-light);

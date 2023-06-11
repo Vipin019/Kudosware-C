@@ -1,19 +1,33 @@
 import "./Postjob.css";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 import find from "../../utils/Find";
 import { useShortProfile } from "../../context/shortProfileContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import JoditEditor from "jodit-react";
 
 const Postjob = () => {
   const [position, setPosition] = useState();
   const [date, setDate] = useState();
-  const [discreption, setDiscreption] = useState();
+  const [discreption, setDiscreption] = useState("");
   const [skills, setSkills] = useState([]);
   const [responsbality, setResponsability] = useState();
   const [education, setEducation] = useState("");
   const [shortProfile, setShortProfile] = useShortProfile();
+  const editor = useRef(null);
+  const [config, setConfig] = useState({
+    readonly: false,
+    placeholder: "Discreption.",
+    height: "10rem",
+    width: "100%",
+  });
+  const [configRes, setConfigRes] = useState({
+    readonly: false,
+    placeholder: "Responsibilities.",
+    height: "10rem",
+    width: "100%",
+  });
 
   const [tagClass1, setTagClass1] = useState("postJob__container__input--l");
   const [tagClass2, setTagClass2] = useState("postJob__container__input--l");
@@ -88,12 +102,13 @@ const Postjob = () => {
               }}
             />
           </div>
-          <textarea
-            type="text"
-            placeholder="Discreption"
+          <JoditEditor
+            ref={editor}
+            config={config}
+            // placeholder="Discreption"
             value={discreption}
             onChange={(e) => {
-              setDiscreption(e.target.value);
+              setDiscreption(e);
             }}
           />
           <div className="postjob__container--skills">
@@ -186,12 +201,13 @@ const Postjob = () => {
               }}
             />
           </div>
-          <textarea
-            type="text"
-            placeholder="Responsability"
+          <JoditEditor
+            ref={editor}
+            config={configRes}
+            // placeholder="Responsability"
             value={responsbality}
             onChange={(e) => {
-              setResponsability(e.target.value);
+              setResponsability(e);
             }}
           />
           <input type="submit" value={"Post"} className="btn btn-d" />

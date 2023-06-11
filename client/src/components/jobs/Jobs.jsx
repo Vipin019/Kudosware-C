@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../context/Auth";
 import { useShortProfile } from "../../context/shortProfileContext";
 
+const stringToHTML = (htmlString) => {
+  const tempElement = document.createElement("div");
+  tempElement.innerHTML = htmlString;
+  return tempElement.textContent || tempElement.innerText || "";
+};
+
 const Jobs = ({ job }) => {
   const [auth, setAuth] = useAuth();
   const [shortProfile, setShortProfile] = useShortProfile();
@@ -17,8 +23,7 @@ const Jobs = ({ job }) => {
         }}
       >
         <h1>{job?.position}</h1>
-        <p>{job?.discreption}</p>
-
+        <div dangerouslySetInnerHTML={{ __html: job?.discreption }}></div>
         <div className="jobs__container--skills">
           <h6>Skills Required</h6>
           <div>
@@ -29,9 +34,7 @@ const Jobs = ({ job }) => {
         </div>
         <div className="jobs__container--res">
           <h6>Responsibilities</h6>
-          <li>
-            <p>{job?.responsbality}</p>
-          </li>
+          <div dangerouslySetInnerHTML={{ __html: job?.responsbality }}></div>
         </div>
         <div className="jobs__container--status">
           <small>{job?.countApplicant} Applicants</small>
