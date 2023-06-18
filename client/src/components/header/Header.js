@@ -15,7 +15,7 @@ const Header = () => {
       <div className="background"></div>
       <Link to="/">
         <div className="appName">
-          <h1 id="appName">Kudosware Careers</h1>
+          <h1 id="appName">Karma Careers</h1>
         </div>
       </Link>
 
@@ -23,7 +23,7 @@ const Header = () => {
         <div className="header">
           <Link to="/">
             <div className="appName">
-              <h1 id="appName">Kudosware Careers</h1>
+              <h1 id="appName">Karma Careers</h1>
             </div>
           </Link>
           {auth?.user?.idCardNo && (
@@ -57,7 +57,7 @@ const Header = () => {
         <div className="header">
           <Link to="/">
             <div className="appName">
-              <h1 id="appName">Kudosware Careers</h1>
+              <h1 id="appName">Karma Careers</h1>
             </div>
           </Link>
           <Link to="/login">
